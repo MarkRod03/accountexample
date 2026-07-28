@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Website</title>
+</head>
+<body>
+
+<h1>Example Website</h1>
+<h4>Welcome back, <span th:text="${user.getUsername()}"></span></h4>
+<p>User specific page shown here.</p>
+<a th:href="@{/}">Logout</a>
+
+</body>
+</html>
